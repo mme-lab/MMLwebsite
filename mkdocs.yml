@@ -1,0 +1,90 @@
+site_name: 豊田工業大学 機械システム分野 機械材料物性研究室
+site_description: Laboratory website
+site_author: Takuma Shiga
+site_url: "https://<your-username>.github.io/mme-lab"
+repo_url: "https://github.com/<your-username>/mme-lab"
+repo_name: mme-lab
+copyright: "© Mechanical Material Engineering Laboratory, Toyota Technological Institute"
+
+use_directory_urls: true
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.sections
+    - navigation.path
+    - toc.integrate
+    - content.code.copy
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    #- content.action.edit
+  logo: assets/logo-mme-padding.svg
+  #icon:
+  #  #logo: material/alpha-s-box
+  #  logo: assets/logo-mme.svg
+  #  repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: indigo
+extra:
+  social:
+    #- icon: fontawesome/brands/x-twitter
+    #  link: https://x.com/
+    #- icon: fontawesome/brands/github
+    #  link: https://github.com/<your-username>
+    #- icon: fontawesome/brands/google
+    #  link: https://sites.google.com/
+  generator: false
+extra_css:
+  - stylesheets/brand.css
+  - stylesheets/extra.css
+  - stylesheets/extra_cv.css
+nav:
+  - Home: index.md
+  #- News: news.md
+  - Research: research.md
+  - Members: members.md
+  - Publications: publications.md
+  - Presentations:
+      - Domestic conference: presentations/presentations_domestic.md
+      - International conference: presentations/presentations_international.md
+  - Teaching: teaching.md
+  - Openings: openings.md
+  - Access: access.md
+  - Contact: contact.md
+
+plugins:
+  - search
+  - tags
+  - macros
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+

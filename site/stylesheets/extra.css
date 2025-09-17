@@ -1,0 +1,188 @@
+/* ロゴ枠を広げ、はみ出しを許可 */
+.md-header__button.md-logo {
+  width: auto;               /* 既定の固定幅を解除 */
+  overflow: visible;         /* クリップしない */
+  padding-right: .2rem;      /* タイトルとの間に少し余白 */
+}
+
+/* ロゴ画像/SVGの高さだけ指定して、横は自動 */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.35rem;           /* お好みで 1.2–1.6rem あたり */
+  width: auto;
+}
+
+/* スマホでは少し小さめに */
+@media (max-width: 600px){
+  .md-header__button.md-logo img,
+  .md-header__button.md-logo svg { height: 1.1rem; }
+}
+
+
+:root {
+  --md-primary-fg-color: #1e88e5;
+}
+.hero {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(0,0,0,0.03);
+}
+.hero-img { display:block; margin: 1rem auto; max-width: 720px; }
+
+ol.pubs {
+  margin-left: 1.25rem;
+  padding-left: 0.75rem;
+}
+ol.pubs > li {
+  margin-bottom: 0.9rem;
+}
+
+/* === Members レイアウト === */
+.member-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1rem 1.25rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 1rem;
+  background: var(--md-default-bg-color);
+}
+.member-photo {
+  width: 140px; height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.member-body h3 { margin: 0 0 .25rem 0; line-height: 1.15; }
+.member-meta { opacity: .8; margin-bottom: .5rem; }
+
+/* アイコンボタン */
+.icon-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 999px;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  background: transparent;
+  transition: background .15s, transform .05s;
+  margin-right: .5rem;
+}
+.icon-btn:hover { background: var(--md-default-fg-color--transparent); }
+.icon-btn img { width: 20px; height: 20px; }
+
+/* Tooltip（data-tooltip） */
+[data-tooltip]{ position:relative; }
+@media (hover:hover){
+  [data-tooltip]::after{
+    content: attr(data-tooltip);
+    position:absolute; bottom: calc(100% + .5rem); left:50%;
+    transform: translateX(-50%) scale(.98);
+    background: rgba(0,0,0,.85); color:#fff; padding:.28rem .5rem;
+    border-radius:.3rem; font-size:.85em; white-space:nowrap;
+    opacity:0; pointer-events:none; transition:opacity .15s,transform .15s; z-index:30;
+  }
+  [data-tooltip]::before{
+    content:""; position:absolute; bottom: calc(100% + .34rem); left:50%;
+    transform: translateX(-50%) rotate(45deg);
+    width:.5rem; height:.5rem; background: rgba(0,0,0,.85);
+    opacity:0; transition:opacity .15s; z-index:29;
+  }
+  [data-tooltip]:hover::after,[data-tooltip]:hover::before,
+  [data-tooltip]:focus-visible::after,[data-tooltip]:focus-visible::before{
+    opacity:1; transform: translateX(-50%) scale(1);
+  }
+}
+
+/* 学部/院生のカードグリッド（大きめカード版） */
+.member-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* ← 160→260 に拡大 */
+  gap: 1.1rem; /* 余白も少し広げる */
+}
+
+/* カード本体：上から 画像 / 名前 / メタ / 説明 / アクション */
+.member-tile{
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .9rem;
+  padding: 1rem 1.1rem;
+  text-align: left;                 /* 左寄せに変更（センター好きなら center のままでOK） */
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  row-gap: .35rem;
+  background: var(--md-default-bg-color);
+}
+
+/* 画像を少し大きく・丸のまま */
+.member-tile img{
+  width: 112px;                     /* ← 88→112 に拡大（好みで 120 でも） */
+  height: 112px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: .25rem auto .35rem;       /* 上下余白＋中央寄せ */
+  display: block;
+}
+
+/* 名前・メタ・説明 */
+.member-name{
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin: 0;
+}
+.member-meta{
+  font-size: .92rem;
+  opacity: .75;
+  margin: 0 0 .15rem 0;
+}
+
+/* 説明テキスト（複数行対応・長すぎる時はクランプ） */
+.member-desc{
+  font-size: .95rem;
+  line-height: 1.45;
+  margin: .2rem 0 .4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;            /* 表示は4行まで（必要に応じて増減） */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Email / GitHub などのアクション */
+.member-actions{
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: .1rem;
+}
+
+/* レスポンシブ：狭い画面では少し小さく */
+@media (max-width: 720px){
+  .member-grid{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .member-tile img{
+    width: 96px; height: 96px;
+  }
+}
+
+/* News スクロールボックス */
+.news-scroll {
+  max-height: 240px;                /* 高さはお好みで */
+  overflow: auto;                   /* スクロールを有効化 */
+  padding: .75rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .75rem;
+  background: var(--md-default-bg-color);
+  scroll-behavior: smooth;
+}
+.news-scroll ul { margin: 0; }
+.news-scroll li { margin: .25rem 0; }
+
+/* スクロールバー控えめ（任意） */
+.news-scroll::-webkit-scrollbar { width: 8px; }
+.news-scroll::-webkit-scrollbar-thumb {
+  background: var(--md-default-fg-color--lighter);
+  border-radius: 8px;
+}
+

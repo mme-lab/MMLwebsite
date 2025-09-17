@@ -1,0 +1,35 @@
+/* 省略（…）をやめて折り返しOKに */
+.md-header__topic .md-ellipsis {
+  white-space: normal;
+  text-overflow: clip;
+  overflow: visible;
+  line-height: 1.15;
+}
+
+/* 2行目（英語表記）を疑似要素で追加 */
+.md-header__topic .md-ellipsis::after {
+  content: "Mechanical Material Engineering Laboratory, Toyota Technological Institute";
+  display: block;
+  font-size: 0.9em;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-top: 2px;
+}
+
+/* 画面幅に応じて調整 */
+@media (max-width: 960px) {
+  .md-header__topic { font-size: clamp(14px, 2.1vw, 18px); }
+  /* 日本語だけにして英語行は隠す */
+  .md-header__topic .md-ellipsis::after { display: none; }
+}
+
+@media (max-width: 560px) {
+  /* さらに狭いときは短縮名に置き換え */
+  .md-header__topic .md-ellipsis { font-size: 0; }      /* 元文字を非表示 */
+  .md-header__topic .md-ellipsis::before {
+    content: "MME Lab @ TTI";
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
