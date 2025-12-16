@@ -9,7 +9,7 @@ Materials Research Meeting 2025 (MRM2025)，<strong>未定</strong>，パシフ�
 <li>
 Yuki Mori, <u>Takuma Shiga</u>, and Takuma Hori,<br>
 Thermal Conductivity of Silicon Crystals with Amorphous Nanoinclusion,<br>
-第11回日韓機械学会合同・熱流体国際会議/The Eleventh JSME-KSME Thermal and Fuilds Engineering Conference，<strong>未定</strong>，沖縄コンベンションセンター（沖縄県宜野湾市）（2025年10月22日） [<a href="https://tfec11.jp/">link</a>]
+第11回日韓機械学会合同・熱流体国際会議/The Eleventh JSME-KSME Thermal and Fuilds Engineering Conference，<strong>JK-TFEC11-1120</strong>，沖縄コンベンションセンター（沖縄県宜野湾市）（2025年10月23日） [<a href="https://tfec11.jp/">link</a>]
 </li>
 <li>
 <u>Takuma Shiga</u>, Yuichiro Yamashita, Takashi Yagi,<br>

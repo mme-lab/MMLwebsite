@@ -6,9 +6,23 @@
 
 <ul reversed class="pubs">
  <li>
-   Shun-ichiro Ito, Kan Ueji, Shigeki Saito, <u>Takuma Shiga</u>, Satoshi Kusaba, Takashi Yagi, Taishi Takenobu, and Kazuhiro Yanagi<sup>&ast;</sup>,<br>
-   Modulation of Heat Flow via Electrochemical Doping in Conducting Polymer PBTTT,<br>
-   <strong><em>Submitted (2025)</em></strong>
+    Kosuke Yamazaki, <u>Takuma Shiga</u>, Kumpei Shiraishi, and Emi Minamitani<sup>&ast;</sup>,<br>
+    Topological descriptor for interpretable thermal transort prediction in amorphous graphene,<br>
+    <strong><em>Submitted (2025)</em></strong><br>
+    <strong>preprint</strong>:
+    <a href="https://doi.org/10.48550/arXiv.2512.13112">arXiv:2512.13112</a>
+ </li>
+
+ <li>
+    Seohee Jang, Seung-Woo Jeon, <u>Takuma Shiga</u>, Jeeyong Shin, Sangwook Han, and Woosung Park<sup>&ast;</sup>,<br>
+    Thermally triggered non-diffuse phonon reflection from boundaries in single-crystal diamond nanobeams,<br>
+    <strong><em>Submitted (2025)</em></strong>
+ </li>
+
+ <li>
+    Shun-ichiro Ito, Kan Ueji, Shigeki Saito, <u>Takuma Shiga</u>, Satoshi Kusaba, Takashi Yagi, Taishi Takenobu, and Kazuhiro Yanagi<sup>&ast;</sup>,<br>
+    Modulation of Heat Flow via Electrochemical Doping in Conducting Polymer PBTTT,<br>
+    <strong><em>Submitted (2025)</em></strong>
  </li>
 </ul>
 
