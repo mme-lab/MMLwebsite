@@ -6,6 +6,14 @@
 
 <ul reversed class="pubs">
  <li>
+    <u>Takuma Shiga</u><sup>&ast;</sup>, Yoshikazu Mizuguchi, and Hiroshi Fujihisa,<br>
+    Anharmonic lattice dynamics study of phonon transport in layered and molecular-crystal indium iodides,<br>
+    <strong><em>Submitted (2026)</em></strong><br>
+    <strong>preprint</strong>:
+    <a href="https://doi.org/10.48550/arXiv.2601.01766">arXiv:2601.01766</a>
+ </li>
+
+ <li>
     Kosuke Yamazaki, <u>Takuma Shiga</u>, Kumpei Shiraishi, and Emi Minamitani<sup>&ast;</sup>,<br>
     Topological descriptor for interpretable thermal transort prediction in amorphous graphene,<br>
     <strong><em>Submitted (2025)</em></strong><br>
