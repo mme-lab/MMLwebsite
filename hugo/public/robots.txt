@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://mme-lab.github.io/MMLwebsite/sitemap.xml
