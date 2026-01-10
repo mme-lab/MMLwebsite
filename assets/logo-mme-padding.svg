@@ -1,8 +1,0 @@
-<!-- logo-mme (no background, wider viewBox for padding) -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 256" preserveAspectRatio="xMidYMid meet" role="img" aria-label="MME">
-  <!-- Centered bold text only, no background rectangle -->
-  <text x="50%" y="50%" text-anchor="middle"
-        dominant-baseline="central"
-        font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
-        font-size="132" font-weight="800" fill="#ffffff">MME</text>
-</svg>
